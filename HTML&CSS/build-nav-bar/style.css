@@ -7,8 +7,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     background-color: #df078c;
     padding: 15px 30px;
+    flex-wrap: wrap;
 }
 
 .logo {

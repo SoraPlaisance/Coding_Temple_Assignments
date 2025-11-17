@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    /* content: "Default View"; */
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    padding: 50px 0;
+    color: black;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 599px) {
+    body {
+        background-color: rgb(255, 131, 151);
+    }
+    .container::after {
+        content: "Mobile View";
+        color: white;
+    }
+}
+
+
+/* Tablet View */
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    body {
+        background-color: rgb(226, 131, 255);
+    }
+    .container::after {
+        content: "Tablet View";
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: rgb(131, 214, 255);
+    }
+    .container::after {
+        content: "Desktop View";
+        color: white;
+    }
+}

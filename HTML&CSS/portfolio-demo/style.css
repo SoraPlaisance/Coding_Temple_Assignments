@@ -90,3 +90,31 @@ footer {
     padding: 15px;
     font-size: 14px;
 }
+
+@media only screen and (min-width: 1920px) {
+  /* .main-container {
+    max-width: 1920px; 
+  } */
+
+  .hero {
+    font-size: 4rem; /* increase heading size */
+  }
+
+  .projects {
+    font-size: 2rem;
+  }
+
+  .project {
+    padding: 25px;
+    width: 500px;
+  }
+
+  .project img{
+    height: 500px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+  }
+}

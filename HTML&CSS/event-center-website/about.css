@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #dac2ff;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.about-text {
+    background-color: #f3eaff;
+    padding: 10px;
+}
+
+.about-text h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #440e74;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .about {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        text-align: left;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about-img {
+        max-width: 300px;
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+}
+
+nav {
+    background-color: #661ad7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    /* Show hamburger icon */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide menu by default on mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #661ad7;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 20px 0;
+    }
+
+    /* Show menu when active */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Adjust menu list */
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+}
+
+
+
+.footer {
+  background: #661ad7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer .icons a {
+  color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

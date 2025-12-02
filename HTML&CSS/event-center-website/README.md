@@ -7,6 +7,14 @@
     2. FOUR separate pages because I felt like it looked weird to add the contact us at the bottom of every page so I just made it it's own page.
     3. A footer that links to my socials (the only one I actually use right now is GitHub)
     4. One table on the events page, I couldn't tell if the instructions wanted one on every page or not but I found that to be excessive so I only made one.
-    5. Images 
+    5. Images including alt tags
+ -->
 
+ <!-- Instructions
+    Use the navbar to navigate to different pages on the website, and test out the links on my footer. Just have fun exploring
+  -->
+
+<!-- 
+    Thank you for reviewing my first multi page project!
+    Sora Plaisance
  -->

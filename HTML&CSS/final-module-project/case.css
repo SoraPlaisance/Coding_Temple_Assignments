@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.nav { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 70px;
+    background-color: #1B1B1B;
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 717px;
+    height: 18px;
+    gap: 70px;
+    margin-top: 24px;
+    margin-bottom: 28px;
+    color: #9C9C9C;
+    gap: 70px;
+    margin-left: 70px;
+}
+
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    color: #9C9C9C;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color:white;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.img-box {
+    padding: 20px;
+    border: 1px solid #9C9C9C;
+}
+
+
+.case-studies {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.section-header p {
+  color: #777;
+  font-size: 14px;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.subtext {
+  margin-top: 10px;
+}
+
+.cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 40px;
+  align-items: center;
+}
+
+.case.text {
+  max-width: 450px;
+}
+
+.case h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.case p {
+  color: #9C9C9C;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.case.image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.fintech {
+    background: #FFF6E9; 
+    color: #FFA217;
+}
+.edtech {
+    background: #D0E6FF;
+    color: #000AFF;
+}
+.pharma { 
+    background: #E0FFF8; 
+    color: #2AB090;
+}
+
+.btn.fintech {
+    background: #FFA217;
+    color: #FFFFFF;
+}
+
+.btn.edtech {
+    background: #000AFF;
+    color: #FFFFFF;
+}
+
+.btn.pharma {
+    background: #2AB090;
+    color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+  .cases {
+    grid-template-columns: 1fr;
+  }
+
+  .case.text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links, .nav-icons {
+        margin: 10px 0;
+        gap: 20px;
+    }
+}

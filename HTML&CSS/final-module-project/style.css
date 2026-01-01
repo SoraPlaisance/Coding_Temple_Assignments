@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 70px;
+    background-color: #1B1B1B;
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 717px;
+    height: 18px;
+    gap: 70px;
+    margin-top: 24px;
+    margin-bottom: 28px;
+    color: #9C9C9C;
+    gap: 70px;
+    margin-left: 70px;
+}
+
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    color: #9C9C9C;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color:white;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    color: #9C9C9C;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    margin: 32px;
+}
+
+.btn {
+    padding: 21px;
+    background-color: #3F8E00;
+    color: white;
+    border: 1px solid #62BA1B;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-box {
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+@media (max-width: 768px) {
+    .navbar, .hero {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links, .nav-icons {
+        margin: 10px 0;
+        gap: 20px;
+    }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-icons {
+        justify-content: space-between;
+    }
+
+    .footer-text {
+        margin: 50px;
+        margin-left: 130px;
+    }
+}

@@ -10,8 +10,6 @@ let message = age >= 18 ? "You are an adult" : "You are a minor";
 
 console.log(message);
 
-// Using ternary operators removes the need of an if else statement, so it is simply declared with "let" or "const"
-
 // LOGICAL opperators combine multiple conditions
 
 // AND: " && "; Both must be true

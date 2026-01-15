@@ -1,0 +1,57 @@
+body {
+    background-color: pink;
+    font-family: "Crete Round", serif;
+    color: rgb(120, 27, 120);
+}
+
+h1 {
+    font-family: "Lobster", sans-serif;
+}
+
+#quiz-container, #score-container {  
+    background-color: white;  
+    width: 50%;  
+    margin: 50px auto;  
+    padding: 20px;  
+    border-radius: 8px;
+}
+
+#code-container {
+    background: #f4f4f4;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    border: solid, 1px, rgb(255, 87, 160);
+    border-radius: 5px;
+}
+
+#next-button {
+    background-color: rgb(255, 87, 160);
+    color: white;
+    font-family: "Crete Round", serif;
+}
+
+#options-container button {
+    font-family: "Crete Round", serif;
+    background-color: pink;
+    color: rgb(63, 0, 63);
+    margin: 2px;
+}
+
+#code-container {
+    font-family: "Crete Round", serif;
+}
+
+#restart-button {
+    background-color: rgb(255, 87, 160);
+    color: white;
+    font-family: "Crete Round", serif;
+}

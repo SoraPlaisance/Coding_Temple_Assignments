@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+</head>
+<body>
+    <!-- Quiz Section – shows the question and answer options. -->
+    <div id="quiz-container"> 
+        <h1>JavaScript Fundamentals Quiz</h1>
+        <div id="question-container"> </div>
+        <pre id="code-container"></pre>
+        <div id="options-container"> </div>
+        <button id="next-button">
+            Next Question
+        </button>
+    </div>
+    <!-- Score Section – appears at the end to show results and a restart button. -->
+    <div id="score-container" class="hidden">
+        <h2>Your Score:</h2>
+        <p id="score"> </p>
+        <button id="restart-button">
+            Restart Quiz
+        </button>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

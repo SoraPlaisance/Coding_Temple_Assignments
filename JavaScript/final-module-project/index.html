@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="main-title">JavaScript API Dashboard</h1>
+  <div class="grid-container">
+    <section class="grid-item" id="dog-api">
+      <h2>🐶 Random Dog</h2>
+      <button onclick="getDogImage()">Get Dog</button>
+      <div class="output" id="dog-output"></div>
+    </section>
+
+    <section class="grid-item" id="cat-api">
+      <h2>🐱 Random Cat</h2>
+      <button onclick="getCatImage()">Get Cat</button>
+      <div class="output" id="cat-output"></div>
+    </section>
+
+    <section class="grid-item" id="weather-api">
+      <h2>☀️ Weather Info</h2>
+      <button onclick="getWeather()">Get Weather</button>
+      <div class="output" id="weather-output"></div>
+    </section>
+
+    <section class="grid-item" id="currency-api">
+      <h2>💱 Currency Rates</h2>
+      <div class="currency-controls">
+        <!-- Use a shared datalist so users can pick valid currency codes instead of guessing -->
+        <input id="currency-base" list="currency-symbols" value="USD" placeholder="USD" aria-label="Base currency (e.g., USD)" />
+        <input id="currency-amount" value="100" placeholder="Amount (e.g., 100)" aria-label="Amount to convert" />
+        <input id="currency-target" list="currency-symbols" placeholder="EUR" aria-label="Target currency (e.g., EUR)" />
+        <button onclick="getExchangeRates()">Get Rates</button>
+        <datalist id="currency-symbols"></datalist>
+      </div>
+      <div class="output" id="currency-output"></div>
+    </section>
+
+    <section class="grid-item" id="movies-api">
+      <h2>🎮 Trending Movies</h2>
+      <button onclick="getMovies()">Get Movies</button>
+      <div class="output" id="movies-output"></div>
+    </section>
+
+    <section class="grid-item" id="github-api">
+      <h2>🧑‍💻 GitHub User</h2>
+      <div class="github-controls">
+  <input id="github-username" placeholder="username123" aria-label="GitHub username" />
+        <button onclick="getGitHubUser()">Get User</button>
+      </div>
+      <div class="output" id="github-output"></div>
+    </section>
+
+    <section class="grid-item" id="joke-api">
+      <h2>🤣 Random Joke</h2>
+      <button onclick="getJoke()">Get Joke</button>
+      <div class="output" id="joke-output"></div>
+    </section>
+
+    <section class="grid-item" id="public-api">
+      <h2>📚 Public APIs</h2>
+      <button onclick="getPublicApiInfo()">Show One</button>
+      <div class="output" id="publicapi-output"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

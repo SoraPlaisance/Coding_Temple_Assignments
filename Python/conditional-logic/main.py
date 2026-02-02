@@ -25,3 +25,14 @@ elif guess > secret_number:
     print("Too high!")
 else:
     print("Congratulations! You guessed the secret number!")
+    
+# Note: just like how you can use "elif" more than once, you can also use "if" more than once.
+# Example with a for loop:
+
+for i in range(31):
+    if i % 3 == 0:
+        continue
+    if i > 25:
+        break
+    else:
+        print(i)

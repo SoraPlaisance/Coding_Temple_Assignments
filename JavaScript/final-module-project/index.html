@@ -30,12 +30,10 @@
     <section class="grid-item" id="currency-api">
       <h2>💱 Currency Rates</h2>
       <div class="currency-controls">
-        <!-- Use a shared datalist so users can pick valid currency codes instead of guessing -->
-        <input id="currency-base" list="currency-symbols" value="USD" placeholder="USD" aria-label="Base currency (e.g., USD)" />
-        <input id="currency-amount" value="100" placeholder="Amount (e.g., 100)" aria-label="Amount to convert" />
-        <input id="currency-target" list="currency-symbols" placeholder="EUR" aria-label="Target currency (e.g., EUR)" />
+        <input id="currency-base" list="currency-symbols" placeholder="base currency" aria-label="Base currency (e.g., USD)" />
+        <input id="currency-amount" placeholder="Amount (e.g., 100)" aria-label="Amount to convert" />
+        <input id="currency-target" list="currency-symbols" placeholder="target currency" aria-label="Target currency (e.g., EUR)" />
         <button onclick="getExchangeRates()">Get Rates</button>
-        <datalist id="currency-symbols"></datalist>
       </div>
       <div class="output" id="currency-output"></div>
     </section>
@@ -62,11 +60,14 @@
     </section>
 
     <section class="grid-item" id="public-api">
-      <h2>📚 Public APIs</h2>
-      <button onclick="getPublicApiInfo()">Show One</button>
-      <div class="output" id="publicapi-output"></div>
+      <h2>⭐ Pokemon API</h2>
+      <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+      <button onclick="getPokemon()">Get Pokemon</button><br>
+
+      <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+
+      <div id="pokemon-output"></div>
     </section>
-  </div>
 
   <script src="app.js"></script>
 </body>

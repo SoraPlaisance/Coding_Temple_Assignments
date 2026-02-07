@@ -61,7 +61,7 @@
 
     🐱 Random Cat: Click button to show random cat picture
 
-    ☀️ Weather Info: Click button to show the current temperature (in Celcius)
+    ☀️ Weather Info: Click button to show the current temperature (in Fahrenheit)
 
     💱 Currency Rates: 
         1. Enter a valid rate of currency for your base currency (i.e. USD, EUR, JPY, GBP, AUD, etc.)

@@ -51,6 +51,16 @@
       margin-top: 0.5rem;
     }
 
+    img.dog-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    img.cat-image {
+      max-width: 100%;
+      height: auto;
+    }
+
     /* Stack the GitHub input and button vertically */
     .github-controls {
       display: flex;
@@ -70,6 +80,11 @@
       width: auto;
       margin: 0;
       align-self: flex-start;
+    }
+
+    .github-btn {
+    display: inline-block;
+    margin-top: 6px;
     }
 
     /* Currency controls: stack input above button but keep button auto-sized */

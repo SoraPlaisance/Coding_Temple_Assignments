@@ -15,11 +15,9 @@ async function getDogImage() {
 		const img = document.createElement('img');
 		img.src = data.message;
 		img.alt = 'Random dog';
-        // Style :)
-		img.style.maxWidth = '100%';
-		img.style.height = 'auto';
+		img.classList.add('dog-image');
 
-		// Clear previous content and show the image
+		// Clear previous content and append the image
 		output.innerHTML = '';
 		output.appendChild(img);
 	} catch (err) {
@@ -44,9 +42,7 @@ async function getCatImage() {
 		const img = document.createElement('img');
 		img.src = data[0].url;
 		img.alt = 'Random cat';
-        // Style :)
-		img.style.maxWidth = '100%';
-		img.style.height = 'auto';
+		img.classList.add('cat-image');
 
 		output.innerHTML = '';
 		output.appendChild(img);
@@ -60,7 +56,7 @@ async function getWeather() {
     const output = document.getElementById('weather-output');
 
     try {
-        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m');
+        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&temperature_unit=fahrenheit&utm_source=chatgpt.com');
         const data = await response.json();
 
         output.innerHTML = `<p>Temperature: ${data.hourly.temperature_2m[0]}°C</p>`;
@@ -145,9 +141,7 @@ async function getGitHubUser() {
 	btn.type = 'button';
 	btn.onclick = () => window.open(url, '_blank', 'noopener,noreferrer');
 	btn.setAttribute('aria-label', `${data.login} GitHub profile`);
-	// Style! :)
-    btn.style.display = 'inline-block';
-	btn.style.marginTop = '6px';
+    btn.classList.add('github-btn');
 	output.appendChild(btn);
 
     // If error:

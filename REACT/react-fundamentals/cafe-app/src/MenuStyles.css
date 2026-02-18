@@ -1,0 +1,17 @@
+:root {
+    text-align: center;
+    max-width: 1280px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);}
+
+.menu-board {
+    background-color: pink;
+    padding: 2rem;
+    border: rgb(221, 0, 107) solid 5px;
+    border-radius: 4px;
+}
+
+h3 {
+    background-color: rgb(240, 240, 240);
+}

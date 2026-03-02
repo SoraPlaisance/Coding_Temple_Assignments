@@ -1,18 +1,25 @@
-import Coffees from "./Coffees"
-import Teas from "./Teas"
-import Pastries from "./Pastries"
-import './MenuStyles.css';
+// import { useState } from 'react'
+// import Coffees from "./Coffees"
+// import Teas from "./Teas"
+// import Pastries from "./Pastries"
+// import './MenuStyles.css';
 
-function App() {
+// const App = () => {
+//   const [showCoffees, setShowCoffees] = useState(true);
+//   const [showTeas, setShowTeas] = useState(true);
+//   const [showPastries, setShowPastries] = useState(true);
+//   const coffees = useState(['Espresso ', 'Cappuccino ', 'Latte ']);
+//   const teas = useState(['Green Tea ', 'Chamomille Tea ', 'Earl Grey Tea ']);
+//   const pastries = useState(['Croissant ', 'Blueberry Muffin ', 'Cinnamon Roll ']);
 
+//   return (
+//       <div className="menu-board">
+//         <h1>Java Joy Menu</h1>
+//         {showCoffees && <Coffees items={coffees} />}
+//         {showTeas && <Teas items={teas} />}
+//         {showPastries && <Pastries items={pastries} />}
+//       </div>
+//   );
+// };
 
-  return (
-      <div className="menu-board">
-        <Coffees />
-        <Teas />
-        <Pastries />
-      </div>
-  )
-}
-
-export default App
+// export default App;

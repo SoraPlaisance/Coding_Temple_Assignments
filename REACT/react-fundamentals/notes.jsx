@@ -60,3 +60,32 @@
 
 
 
+// Component Life Cycle
+
+// The lifecycle of a React component consists of three main phases:
+    // 1. Mounting: When the component is first inserted into the DOM
+    // 2. Updating: When the component re-renders due to changes in props or state
+    // 3. Unmounting: When the component is removed from the DOM
+
+// Hooks
+
+// Two important hooks for lifecycle management are:
+    // useState: Manages state in function components
+    // useEffect: Handles side effects and lifecycle events
+
+// useEffect Hook
+
+// useEffect allows function-based components to perform side effects, such as data fetching, subscribing to a stream, or manipulating the DOM, in response to lifecycle events
+// Syntax:
+    // useEffect(() => {
+    //   // Side effect logic here (the code that will run)
+    // }, [dependencies]);
+
+    // The first argument is a function that contains the side effect
+    // The second argument is a dependency array that determines when the side effect should be re-executed
+
+    // No dependencies ([]): Effect runs once when the component mounts (similar to componentDidMount)
+    // With dependencies: Effect runs when the dependencies change (similar to componentDidUpdate)
+    // Cleanup function: Used to handle component unmounting (similar to componentWillUnmount)
+
+    

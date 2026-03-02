@@ -32,3 +32,22 @@ function Welcome(props) {
 function Welcome({ name }) {
   return <h2>Hello, {name}!</h2>;
 }
+
+// Way to remember .this
+// say out loud "this is *blank* right now"
+
+// How to use props:
+// Here's an example of passing props from a parent to a child component:
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Alice" />
+      <Greeting name="Hatter" />
+    </div>
+  )
+}

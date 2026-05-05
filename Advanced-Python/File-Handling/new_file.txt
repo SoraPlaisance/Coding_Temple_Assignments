@@ -1,0 +1,2 @@
+Writing to a file from Python!
+Adding more content with "a" mode
